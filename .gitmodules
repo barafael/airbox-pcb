@@ -1,0 +1,9 @@
+[submodule "sensirion-scd30-kicad"]
+	path = sensirion-scd30-kicad
+	url = https://github.com/barafael/sensirion-scd30-kicad
+[submodule "waveshare-epaper-module"]
+	path = waveshare-epaper-module
+	url = git@github.com:barafael/waveshare-epaper-module.git
+[submodule "waveshare-nrf52840-module"]
+	path = waveshare-nrf52840-module
+	url = git@github.com:barafael/waveshare-nrf52840-module.git
