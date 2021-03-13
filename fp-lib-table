@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name sensirion-scd30)(type KiCad)(uri /home/ra/airbox-pcb/sensirion-scd30-kicad/sensirion-scd30.pretty)(options "")(descr ""))
+  (lib (name waveshare-epaper-module)(type KiCad)(uri /home/ra/airbox-pcb/waveshare-epaper-module/waveshare-epaper-module.pretty)(options "")(descr ""))
+  (lib (name nrf52840-waveshare)(type KiCad)(uri /home/ra/airbox/waveshare-nrf52840-module/nrf52840-waveshare.pretty)(options "")(descr ""))
+)
