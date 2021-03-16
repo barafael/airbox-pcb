@@ -177,4 +177,41 @@ Text GLabel 7180 4620 2    50   Input ~ 0
 SCL
 Text GLabel 7180 4720 2    50   Input ~ 0
 SDA
+$Comp
+L sgp40-adafruit-breakout:SGP40 U4
+U 1 1 60508165
+P 3875 5140
+F 0 "U4" H 3983 5605 50  0000 C CNN
+F 1 "SGP40" H 3983 5514 50  0000 C CNN
+F 2 "sgp40-adafruit-breakout:sgp40-adafruit-breakout" H 3875 5140 50  0001 C CNN
+F 3 "" H 3875 5140 50  0001 C CNN
+	1    3875 5140
+	1    0    0    -1  
+$EndComp
+Text GLabel 4375 5240 2    50   Input ~ 0
+SCL1
+Text GLabel 4375 5140 2    50   Input ~ 0
+SDA1
+$Comp
+L power:VDD #PWR?
+U 1 1 6050D44B
+P 4375 5040
+F 0 "#PWR?" H 4375 4890 50  0001 C CNN
+F 1 "VDD" V 4390 5167 50  0000 L CNN
+F 2 "" H 4375 5040 50  0001 C CNN
+F 3 "" H 4375 5040 50  0001 C CNN
+	1    4375 5040
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6050E896
+P 4375 4940
+F 0 "#PWR?" H 4375 4690 50  0001 C CNN
+F 1 "GND" V 4380 4812 50  0000 R CNN
+F 2 "" H 4375 4940 50  0001 C CNN
+F 3 "" H 4375 4940 50  0001 C CNN
+	1    4375 4940
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

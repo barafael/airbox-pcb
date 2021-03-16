@@ -2,4 +2,5 @@
   (lib (name scd30)(type Legacy)(uri /home/ra/airbox-pcb/sensirion-scd30-kicad/scd30.lib)(options "")(descr ""))
   (lib (name epaper-module)(type Legacy)(uri /home/ra/airbox-pcb/waveshare-epaper-module/waveshare-epaper-module.lib)(options "")(descr ""))
   (lib (name nrf52-waveshare)(type Legacy)(uri /home/ra/airbox-pcb/waveshare-nrf52840-module/nrf52-waveshare.lib)(options "")(descr ""))
+  (lib (name sgp40)(type Legacy)(uri /home/ra/airbox-pcb/sgp40-adafruit-kicad/sgp40-adafruit-breakout.lib)(options "")(descr ""))
 )
