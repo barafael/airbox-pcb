@@ -7,3 +7,6 @@
 [submodule "waveshare-nrf52840-module"]
 	path = waveshare-nrf52840-module
 	url = git@github.com:barafael/waveshare-nrf52840-module.git
+[submodule "sgp40-adafruit-kicad"]
+	path = sgp40-adafruit-kicad
+	url = git@github.com:barafael/sgp40-adafruit-kicad.git
