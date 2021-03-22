@@ -4,4 +4,5 @@
   (lib (name nrf52840-waveshare)(type KiCad)(uri /home/ra/airbox/waveshare-nrf52840-module/nrf52840-waveshare.pretty)(options "")(descr ""))
   (lib (name sgp40-adafruit-breakout)(type KiCad)(uri /home/ra/airbox-pcb/sgp40-adafruit-kicad/sgp40-adafruit-breakout.pretty)(options "")(descr ""))
   (lib (name hw-045)(type KiCad)(uri ${KIPRJMOD}/hw-045/hw-045.pretty)(options "")(descr ""))
+  (lib (name ils-dcdc)(type KiCad)(uri ${KIPRJMOD}/ils-dcdc/ils-dcdc.pretty)(options "")(descr ""))
 )
