@@ -60,9 +60,9 @@ Text GLabel 7535 3780 2    50   Input ~ 0
 SWDIO
 Text GLabel 7535 3880 2    50   Input ~ 0
 SWDCLK
-Text GLabel 4235 3480 0    50   Input ~ 0
-SCL_SGP40
 Text GLabel 4235 3380 0    50   Input ~ 0
+SCL_SGP40
+Text GLabel 4235 3480 0    50   Input ~ 0
 SDA_SGP40
 Text GLabel 5545 6495 2    50   Input ~ 0
 BUSY
@@ -327,7 +327,7 @@ F 3 "~" H 7320 1305 50  0001 C CNN
 	1    7320 1305
 	1    0    0    -1  
 $EndComp
-Text GLabel 7120 1405 0    50   Input ~ 0
+Text GLabel 6310 1405 0    50   Input ~ 0
 VBAT
 $Comp
 L power:GND #PWR0117
@@ -533,4 +533,63 @@ Text GLabel 7535 4380 2    50   Input ~ 0
 BUZ_SIG
 Text GLabel 7535 4280 2    50   Input ~ 0
 DB_SIG
+$Comp
+L Device:R R5
+U 1 1 605D7110
+P 6710 1405
+F 0 "R5" V 6917 1405 50  0000 C CNN
+F 1 "0" V 6826 1405 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6640 1405 50  0001 C CNN
+F 3 "~" H 6710 1405 50  0001 C CNN
+	1    6710 1405
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6860 1405 7120 1405
+Wire Wire Line
+	6310 1405 6560 1405
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 605E3545
+P 10815 5415
+F 0 "H3" H 10915 5461 50  0000 L CNN
+F 1 "MountingHole" H 10915 5370 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10815 5415 50  0001 C CNN
+F 3 "~" H 10815 5415 50  0001 C CNN
+	1    10815 5415
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 605E4F86
+P 10630 5415
+F 0 "H1" H 10730 5461 50  0000 L CNN
+F 1 "MountingHole" H 10730 5370 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10630 5415 50  0001 C CNN
+F 3 "~" H 10630 5415 50  0001 C CNN
+	1    10630 5415
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 605E52B5
+P 10815 5595
+F 0 "H4" H 10915 5641 50  0000 L CNN
+F 1 "MountingHole" H 10915 5550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10815 5595 50  0001 C CNN
+F 3 "~" H 10815 5595 50  0001 C CNN
+	1    10815 5595
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 605E5377
+P 10630 5595
+F 0 "H2" H 10730 5641 50  0000 L CNN
+F 1 "MountingHole" H 10730 5550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10630 5595 50  0001 C CNN
+F 3 "~" H 10630 5595 50  0001 C CNN
+	1    10630 5595
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
