@@ -13,20 +13,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 7535 4080 2    50   Input ~ 0
+Text GLabel 4235 4480 0    50   Input ~ 0
 DIN
-Text GLabel 7535 3980 2    50   Input ~ 0
+Text GLabel 5835 4680 3    50   Input ~ 0
 CLK
-Text GLabel 7535 4180 2    50   Input ~ 0
+Text GLabel 5935 4680 3    50   Input ~ 0
 CS
-Text GLabel 7535 3680 2    50   Input ~ 0
+Text GLabel 6035 4680 3    50   Input ~ 0
 DC
-Text GLabel 7535 3580 2    50   Input ~ 0
+Text GLabel 4235 4380 0    50   Input ~ 0
 BUSY
-Text GLabel 4235 4280 0    50   Input ~ 0
-SCL_SCD30
-Text GLabel 4235 4180 0    50   Input ~ 0
-SDA_SCD30
 $Comp
 L power:GND #PWR0101
 U 1 1 604966F7
@@ -64,9 +60,9 @@ Text GLabel 7535 3780 2    50   Input ~ 0
 SWDIO
 Text GLabel 7535 3880 2    50   Input ~ 0
 SWDCLK
-Text GLabel 4235 3680 0    50   Input ~ 0
+Text GLabel 7535 4380 2    50   Input ~ 0
 SCL_SGP40
-Text GLabel 4235 3580 0    50   Input ~ 0
+Text GLabel 7535 4280 2    50   Input ~ 0
 SDA_SGP40
 Text GLabel 5545 6495 2    50   Input ~ 0
 BUSY
@@ -102,7 +98,7 @@ F 3 "" H 5545 7195 50  0001 C CNN
 	1    5545 7195
 	0    1    1    0   
 $EndComp
-Text GLabel 4235 4080 0    50   Input ~ 0
+Text GLabel 4235 3980 0    50   Input ~ 0
 RST
 $Comp
 L epaper-module:epaper-module U2
@@ -140,78 +136,78 @@ $EndComp
 $Comp
 L scd30:SCD30 U3
 U 1 1 604A5F09
-P 1625 5690
-F 0 "U3" H 1625 5735 50  0000 C CNN
-F 1 "SCD30" H 1625 5660 50  0000 C CNN
-F 2 "sensirion-scd30:scd30" H 1625 5690 50  0001 C CNN
-F 3 "" H 1625 5690 50  0001 C CNN
-	1    1625 5690
+P 1640 6880
+F 0 "U3" H 1640 6925 50  0000 C CNN
+F 1 "SCD30" H 1640 6850 50  0000 C CNN
+F 2 "sensirion-scd30:scd30" H 1640 6880 50  0001 C CNN
+F 3 "" H 1640 6880 50  0001 C CNN
+	1    1640 6880
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VDD #PWR0107
 U 1 1 604A7B21
-P 1375 5240
-F 0 "#PWR0107" H 1375 5090 50  0001 C CNN
-F 1 "VDD" V 1390 5367 50  0000 L CNN
-F 2 "" H 1375 5240 50  0001 C CNN
-F 3 "" H 1375 5240 50  0001 C CNN
-	1    1375 5240
+P 1390 6430
+F 0 "#PWR0107" H 1390 6280 50  0001 C CNN
+F 1 "VDD" V 1405 6557 50  0000 L CNN
+F 2 "" H 1390 6430 50  0001 C CNN
+F 3 "" H 1390 6430 50  0001 C CNN
+	1    1390 6430
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 604A9AD8
-P 1375 5865
-F 0 "#PWR0108" H 1375 5615 50  0001 C CNN
-F 1 "GND" V 1380 5737 50  0000 R CNN
-F 2 "" H 1375 5865 50  0001 C CNN
-F 3 "" H 1375 5865 50  0001 C CNN
-	1    1375 5865
+P 1390 7055
+F 0 "#PWR0108" H 1390 6805 50  0001 C CNN
+F 1 "GND" V 1395 6927 50  0000 R CNN
+F 2 "" H 1390 7055 50  0001 C CNN
+F 3 "" H 1390 7055 50  0001 C CNN
+	1    1390 7055
 	1    0    0    -1  
 $EndComp
-NoConn ~ 975  5440
-NoConn ~ 975  5540
-NoConn ~ 975  5640
-Text GLabel 1900 5440 2    50   Input ~ 0
+NoConn ~ 990  6630
+NoConn ~ 990  6730
+NoConn ~ 990  6830
+Text GLabel 1915 6630 2    50   Input ~ 0
 SCL_SCD30
-Text GLabel 1900 5540 2    50   Input ~ 0
+Text GLabel 1915 6730 2    50   Input ~ 0
 SDA_SCD30
 $Comp
 L sgp40-adafruit-breakout:SGP40 U4
 U 1 1 60508165
-P 1465 3555
-F 0 "U4" H 1465 3555 50  0000 C CNN
-F 1 "SGP40" H 1465 3480 50  0000 C CNN
-F 2 "sgp40-adafruit-breakout:sgp40-sparkx-breakout" H 1465 3555 50  0001 C CNN
-F 3 "" H 1465 3555 50  0001 C CNN
-	1    1465 3555
+P 1480 4745
+F 0 "U4" H 1480 4745 50  0000 C CNN
+F 1 "SGP40" H 1480 4670 50  0000 C CNN
+F 2 "sgp40-adafruit-breakout:sgp40-sparkx-breakout" H 1480 4745 50  0001 C CNN
+F 3 "" H 1480 4745 50  0001 C CNN
+	1    1480 4745
 	1    0    0    -1  
 $EndComp
-Text GLabel 1965 3655 2    50   Input ~ 0
+Text GLabel 1980 4845 2    50   Input ~ 0
 SCL_SGP40
-Text GLabel 1965 3555 2    50   Input ~ 0
+Text GLabel 1980 4745 2    50   Input ~ 0
 SDA_SGP40
 $Comp
 L power:VDD #PWR0109
 U 1 1 6050D44B
-P 1965 3455
-F 0 "#PWR0109" H 1965 3305 50  0001 C CNN
-F 1 "VDD" V 1980 3582 50  0000 L CNN
-F 2 "" H 1965 3455 50  0001 C CNN
-F 3 "" H 1965 3455 50  0001 C CNN
-	1    1965 3455
+P 1980 4645
+F 0 "#PWR0109" H 1980 4495 50  0001 C CNN
+F 1 "VDD" V 1995 4772 50  0000 L CNN
+F 2 "" H 1980 4645 50  0001 C CNN
+F 3 "" H 1980 4645 50  0001 C CNN
+	1    1980 4645
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 6050E896
-P 1965 3355
-F 0 "#PWR0110" H 1965 3105 50  0001 C CNN
-F 1 "GND" V 1970 3227 50  0000 R CNN
-F 2 "" H 1965 3355 50  0001 C CNN
-F 3 "" H 1965 3355 50  0001 C CNN
-	1    1965 3355
+P 1980 4545
+F 0 "#PWR0110" H 1980 4295 50  0001 C CNN
+F 1 "GND" V 1985 4417 50  0000 R CNN
+F 2 "" H 1980 4545 50  0001 C CNN
+F 3 "" H 1980 4545 50  0001 C CNN
+	1    1980 4545
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -261,28 +257,17 @@ F 3 "" H 1905 1290 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 605B03FF
-P 1245 1985
-F 0 "J1" H 1353 2166 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1353 2075 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1245 1985 50  0001 C CNN
-F 3 "~" H 1245 1985 50  0001 C CNN
-	1    1245 1985
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0114
 U 1 1 605B1326
-P 1445 1985
-F 0 "#PWR0114" H 1445 1735 50  0001 C CNN
-F 1 "GND" V 1450 1857 50  0000 R CNN
-F 2 "" H 1445 1985 50  0001 C CNN
-F 3 "" H 1445 1985 50  0001 C CNN
-	1    1445 1985
+P 1995 2085
+F 0 "#PWR0114" H 1995 1835 50  0001 C CNN
+F 1 "GND" V 2000 1957 50  0000 R CNN
+F 2 "" H 1995 2085 50  0001 C CNN
+F 3 "" H 1995 2085 50  0001 C CNN
+	1    1995 2085
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1445 2085 2    50   Input ~ 0
+Text GLabel 1995 1985 2    50   Input ~ 0
 VIN
 $Comp
 L Connector_Generic:Conn_01x04 J2
@@ -290,46 +275,24 @@ U 1 1 6058B4C0
 P 4775 1235
 F 0 "J2" H 4855 1227 50  0000 L CNN
 F 1 "Conn_01x04" H 4855 1136 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4775 1235 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 4775 1235 50  0001 C CNN
 F 3 "~" H 4775 1235 50  0001 C CNN
 	1    4775 1235
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 6058CB31
-P 4575 1335
-F 0 "#PWR0115" H 4575 1085 50  0001 C CNN
-F 1 "GND" V 4580 1207 50  0000 R CNN
-F 2 "" H 4575 1335 50  0001 C CNN
-F 3 "" H 4575 1335 50  0001 C CNN
-	1    4575 1335
-	0    1    1    0   
 $EndComp
 Text GLabel 4575 1235 0    50   Input ~ 0
 SWDIO
 Text GLabel 4575 1135 0    50   Input ~ 0
 SWDCLK
-$Comp
-L power:VDD #PWR0116
-U 1 1 6059032B
-P 4575 1435
-F 0 "#PWR0116" H 4575 1285 50  0001 C CNN
-F 1 "VDD" V 4590 1562 50  0000 L CNN
-F 2 "" H 4575 1435 50  0001 C CNN
-F 3 "" H 4575 1435 50  0001 C CNN
-	1    4575 1435
-	0    -1   -1   0   
-$EndComp
 Text Notes 3745 2775 0    100  ~ 20
 Controller: nrf52840
 Text Notes 3740 795  0    100  ~ 20
 Debug Connector (SWD)
 Text Notes 745  790  0    100  ~ 20
 3v3 DC-DC Converter
-Text Notes 740  3140 0    100  ~ 20
+Text Notes 755  4330 0    100  ~ 20
 SGP40 TVOC Sensor
-Text Notes 730  4865 0    100  ~ 20
+Text Notes 745  6055 0    100  ~ 20
 SCD30 CO2 Sensor
 Text Notes 4295 6055 0    100  ~ 20
 Waveshare EPaper Module
@@ -353,23 +316,138 @@ NoConn ~ 6635 3480
 NoConn ~ 6635 3380
 NoConn ~ 7535 3380
 NoConn ~ 7535 3480
-NoConn ~ 7535 4280
-NoConn ~ 7535 4380
-NoConn ~ 4235 4480
-NoConn ~ 4235 4380
-NoConn ~ 4235 3980
 NoConn ~ 4235 3880
-NoConn ~ 4235 3780
 NoConn ~ 4235 3480
 NoConn ~ 4235 3380
-NoConn ~ 5535 4680
-NoConn ~ 5635 4680
-NoConn ~ 5735 4680
-NoConn ~ 5835 4680
-NoConn ~ 5935 4680
-NoConn ~ 6035 4680
-NoConn ~ 6135 4680
-NoConn ~ 6235 4680
-NoConn ~ 6335 4680
 NoConn ~ 6435 4680
+Text GLabel 5635 4680 3    50   Input ~ 0
+SDA_SCD30
+Text GLabel 5735 4680 3    50   Input ~ 0
+VBAT
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 605BB86D
+P 7320 1305
+F 0 "J3" H 7400 1347 50  0000 L CNN
+F 1 "Conn_01x03" H 7400 1256 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 7320 1305 50  0001 C CNN
+F 3 "~" H 7320 1305 50  0001 C CNN
+	1    7320 1305
+	1    0    0    -1  
+$EndComp
+Text GLabel 7120 1405 0    50   Input ~ 0
+VBAT
+$Comp
+L power:GND #PWR0117
+U 1 1 605BE630
+P 6310 1205
+F 0 "#PWR0117" H 6310 955 50  0001 C CNN
+F 1 "GND" V 6315 1077 50  0000 R CNN
+F 2 "" H 6310 1205 50  0001 C CNN
+F 3 "" H 6310 1205 50  0001 C CNN
+	1    6310 1205
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0118
+U 1 1 605BF650
+P 6310 1305
+F 0 "#PWR0118" H 6310 1155 50  0001 C CNN
+F 1 "VDD" V 6325 1433 50  0000 L CNN
+F 2 "" H 6310 1305 50  0001 C CNN
+F 3 "" H 6310 1305 50  0001 C CNN
+	1    6310 1305
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5535 4680 3    50   Input ~ 0
+SCL_SCD30
+$Comp
+L Device:R R1
+U 1 1 6062EF7C
+P 6710 1305
+F 0 "R1" V 6917 1305 50  0000 C CNN
+F 1 "0" V 6826 1305 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6640 1305 50  0001 C CNN
+F 3 "~" H 6710 1305 50  0001 C CNN
+	1    6710 1305
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6062F830
+P 6710 1205
+F 0 "R2" V 6917 1205 50  0000 C CNN
+F 1 "0" V 6826 1205 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6640 1205 50  0001 C CNN
+F 3 "~" H 6710 1205 50  0001 C CNN
+	1    6710 1205
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6310 1205 6560 1205
+Wire Wire Line
+	6860 1205 7120 1205
+Wire Wire Line
+	7120 1305 6860 1305
+Wire Wire Line
+	6560 1305 6310 1305
+$Comp
+L Device:R R3
+U 1 1 60634956
+P 1595 2085
+F 0 "R3" V 1388 2085 50  0000 C CNN
+F 1 "0" V 1479 2085 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1525 2085 50  0001 C CNN
+F 3 "~" H 1595 2085 50  0001 C CNN
+	1    1595 2085
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60634960
+P 1595 1985
+F 0 "R4" V 1388 1985 50  0000 C CNN
+F 1 "0" V 1479 1985 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1525 1985 50  0001 C CNN
+F 3 "~" H 1595 1985 50  0001 C CNN
+	1    1595 1985
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1995 1985 1745 1985
+Wire Wire Line
+	1745 2085 1995 2085
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 606536F9
+P 1245 2085
+F 0 "J1" H 1163 1760 50  0000 C CNN
+F 1 "Conn_01x02" H 1163 1851 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1245 2085 50  0001 C CNN
+F 3 "~" H 1245 2085 50  0001 C CNN
+	1    1245 2085
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 60657049
+P 4575 1335
+F 0 "#PWR0115" H 4575 1085 50  0001 C CNN
+F 1 "GND" V 4580 1207 50  0000 R CNN
+F 2 "" H 4575 1335 50  0001 C CNN
+F 3 "" H 4575 1335 50  0001 C CNN
+	1    4575 1335
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0116
+U 1 1 6065722B
+P 4575 1435
+F 0 "#PWR0116" H 4575 1285 50  0001 C CNN
+F 1 "VDD" V 4590 1563 50  0000 L CNN
+F 2 "" H 4575 1435 50  0001 C CNN
+F 3 "" H 4575 1435 50  0001 C CNN
+	1    4575 1435
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
