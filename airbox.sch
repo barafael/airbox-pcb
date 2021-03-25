@@ -13,15 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4235 4480 0    50   Input ~ 0
+Text GLabel 5735 4680 3    50   Input ~ 0
 DIN
-Text GLabel 5835 4680 3    50   Input ~ 0
+Text GLabel 6035 4680 3    50   Input ~ 0
 CLK
 Text GLabel 5935 4680 3    50   Input ~ 0
 CS
-Text GLabel 6035 4680 3    50   Input ~ 0
+Text GLabel 5835 4680 3    50   Input ~ 0
 DC
-Text GLabel 4235 4380 0    50   Input ~ 0
+Text GLabel 5635 4680 3    50   Input ~ 0
 BUSY
 $Comp
 L power:GND #PWR0101
@@ -60,9 +60,9 @@ Text GLabel 7535 3780 2    50   Input ~ 0
 SWDIO
 Text GLabel 7535 3880 2    50   Input ~ 0
 SWDCLK
-Text GLabel 7535 4380 2    50   Input ~ 0
+Text GLabel 4235 3480 0    50   Input ~ 0
 SCL_SGP40
-Text GLabel 7535 4280 2    50   Input ~ 0
+Text GLabel 4235 3380 0    50   Input ~ 0
 SDA_SGP40
 Text GLabel 5545 6495 2    50   Input ~ 0
 BUSY
@@ -98,7 +98,7 @@ F 3 "" H 5545 7195 50  0001 C CNN
 	1    5545 7195
 	0    1    1    0   
 $EndComp
-Text GLabel 4235 3980 0    50   Input ~ 0
+Text GLabel 5535 4680 3    50   Input ~ 0
 RST
 $Comp
 L epaper-module:epaper-module U2
@@ -116,7 +116,7 @@ L power:VDD #PWR0106
 U 1 1 604B77F1
 P 5435 4680
 F 0 "#PWR0106" H 5435 4530 50  0001 C CNN
-F 1 "VDD" V 5450 4807 50  0000 L CNN
+F 1 "VDD" V 5435 4805 50  0000 L CNN
 F 2 "" H 5435 4680 50  0001 C CNN
 F 3 "" H 5435 4680 50  0001 C CNN
 	1    5435 4680
@@ -314,15 +314,7 @@ NoConn ~ 6635 3680
 NoConn ~ 6635 3580
 NoConn ~ 6635 3480
 NoConn ~ 6635 3380
-NoConn ~ 7535 3380
-NoConn ~ 7535 3480
-NoConn ~ 4235 3880
-NoConn ~ 4235 3480
-NoConn ~ 4235 3380
-NoConn ~ 6435 4680
-Text GLabel 5635 4680 3    50   Input ~ 0
-SDA_SCD30
-Text GLabel 5735 4680 3    50   Input ~ 0
+Text GLabel 7535 3380 2    50   Input ~ 0
 VBAT
 $Comp
 L Connector_Generic:Conn_01x03 J3
@@ -359,8 +351,6 @@ F 3 "" H 6310 1305 50  0001 C CNN
 	1    6310 1305
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5535 4680 3    50   Input ~ 0
-SCL_SCD30
 $Comp
 L Device:R R1
 U 1 1 6062EF7C
@@ -450,4 +440,97 @@ F 3 "" H 4575 1435 50  0001 C CNN
 	1    4575 1435
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 605CC0DF
+P 9930 2135
+F 0 "BZ1" V 9981 1948 50  0000 R CNN
+F 1 "Buzzer" V 9890 1948 50  0000 R CNN
+F 2 "PS1240P02BT:PS1240P02BT" V 9905 2235 50  0001 C CNN
+F 3 "~" V 9905 2235 50  0001 C CNN
+	1    9930 2135
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9830 2235 3    50   Input ~ 0
+BUZ_SIG
+$Comp
+L power:GND #PWR0119
+U 1 1 605CEF04
+P 10030 2235
+F 0 "#PWR0119" H 10030 1985 50  0001 C CNN
+F 1 "GND" H 10035 2062 50  0000 C CNN
+F 2 "" H 10030 2235 50  0001 C CNN
+F 3 "" H 10030 2235 50  0001 C CNN
+	1    10030 2235
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 605D0B36
+P 10095 3585
+F 0 "J5" H 10175 3627 50  0000 L CNN
+F 1 "DecibelMeter" H 10175 3536 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10095 3585 50  0001 C CNN
+F 3 "~" H 10095 3585 50  0001 C CNN
+	1    10095 3585
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 605D1CE7
+P 10095 3230
+F 0 "J4" H 10175 3272 50  0000 L CNN
+F 1 "PowerConverter" H 10175 3181 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10095 3230 50  0001 C CNN
+F 3 "~" H 10095 3230 50  0001 C CNN
+	1    10095 3230
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 605D3773
+P 9895 3585
+F 0 "#PWR0120" H 9895 3335 50  0001 C CNN
+F 1 "GND" V 9900 3457 50  0000 R CNN
+F 2 "" H 9895 3585 50  0001 C CNN
+F 3 "" H 9895 3585 50  0001 C CNN
+	1    9895 3585
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 605D3E18
+P 9895 3230
+F 0 "#PWR0121" H 9895 2980 50  0001 C CNN
+F 1 "GND" V 9900 3102 50  0000 R CNN
+F 2 "" H 9895 3230 50  0001 C CNN
+F 3 "" H 9895 3230 50  0001 C CNN
+	1    9895 3230
+	0    1    1    0   
+$EndComp
+Text GLabel 9895 3685 0    50   Input ~ 0
+5V
+Text GLabel 9895 3485 0    50   Input ~ 0
+DB_SIG
+$Comp
+L power:VDD #PWR0122
+U 1 1 605D52D0
+P 9895 3130
+F 0 "#PWR0122" H 9895 2980 50  0001 C CNN
+F 1 "VDD" V 9910 3257 50  0000 L CNN
+F 2 "" H 9895 3130 50  0001 C CNN
+F 3 "" H 9895 3130 50  0001 C CNN
+	1    9895 3130
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9895 3330 0    50   Input ~ 0
+5V
+Text GLabel 4235 3680 0    50   Input ~ 0
+SCL_SCD30
+Text GLabel 4235 3580 0    50   Input ~ 0
+SDA_SCD30
+Text GLabel 7535 4380 2    50   Input ~ 0
+BUZ_SIG
+Text GLabel 7535 4280 2    50   Input ~ 0
+DB_SIG
 $EndSCHEMATC
