@@ -6,4 +6,5 @@
   (lib (name hw-045)(type Legacy)(uri ${KIPRJMOD}/hw-045/hw-045.lib)(options "")(descr ""))
   (lib (name ils-dcdc)(type Legacy)(uri ${KIPRJMOD}/ils-dcdc/ils-dcdc.lib)(options "")(descr ""))
   (lib (name PS1240P02BT)(type Legacy)(uri ${KIPRJMOD}/PS1240P02BT/PS1240P02BT.lib)(options "")(descr ""))
+  (lib (name airbox-rescue)(type Legacy)(uri ${KIPRJMOD}/airbox-rescue.lib)(options "")(descr ""))
 )

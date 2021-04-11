@@ -13,15 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 5735 4680 3    50   Input ~ 0
-DIN
-Text GLabel 6035 4680 3    50   Input ~ 0
-CLK
-Text GLabel 5935 4680 3    50   Input ~ 0
-CS
 Text GLabel 5835 4680 3    50   Input ~ 0
-DC
+DIN
+Text GLabel 5535 4680 3    50   Input ~ 0
+CLK
 Text GLabel 5635 4680 3    50   Input ~ 0
+CS
+Text GLabel 5735 4680 3    50   Input ~ 0
+DC
+Text GLabel 5935 4680 3    50   Input ~ 0
 BUSY
 $Comp
 L power:GND #PWR0101
@@ -98,7 +98,7 @@ F 3 "" H 5545 7195 50  0001 C CNN
 	1    5545 7195
 	0    1    1    0   
 $EndComp
-Text GLabel 5535 4680 3    50   Input ~ 0
+Text GLabel 6035 4680 3    50   Input ~ 0
 RST
 $Comp
 L epaper-module:epaper-module U2
@@ -209,17 +209,6 @@ F 2 "" H 1980 4545 50  0001 C CNN
 F 3 "" H 1980 4545 50  0001 C CNN
 	1    1980 4545
 	0    -1   -1   0   
-$EndComp
-$Comp
-L ils-dcdc:ils-dcdc U5
-U 1 1 60590807
-P 1505 1390
-F 0 "U5" H 1505 1757 50  0000 C CNN
-F 1 "ils-dcdc" H 1505 1666 50  0000 C CNN
-F 2 "ils-dcdc:ils-3v3dcdc" H 1505 1390 50  0001 C CNN
-F 3 "" H 1505 1390 50  0001 C CNN
-	1    1505 1390
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0111
@@ -551,45 +540,67 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 605E3545
-P 10815 5415
-F 0 "H3" H 10915 5461 50  0000 L CNN
-F 1 "MountingHole" H 10915 5370 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 10815 5415 50  0001 C CNN
-F 3 "~" H 10815 5415 50  0001 C CNN
-	1    10815 5415
+P 10700 5400
+F 0 "H3" H 10800 5446 50  0000 L CNN
+F 1 "MountingHole" H 10800 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10700 5400 50  0001 C CNN
+F 3 "~" H 10700 5400 50  0001 C CNN
+	1    10700 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 605E4F86
-P 10630 5415
-F 0 "H1" H 10730 5461 50  0000 L CNN
-F 1 "MountingHole" H 10730 5370 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 10630 5415 50  0001 C CNN
-F 3 "~" H 10630 5415 50  0001 C CNN
-	1    10630 5415
+P 10500 5400
+F 0 "H1" H 10600 5446 50  0000 L CNN
+F 1 "MountingHole" H 10600 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10500 5400 50  0001 C CNN
+F 3 "~" H 10500 5400 50  0001 C CNN
+	1    10500 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 605E52B5
-P 10815 5595
-F 0 "H4" H 10915 5641 50  0000 L CNN
-F 1 "MountingHole" H 10915 5550 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 10815 5595 50  0001 C CNN
-F 3 "~" H 10815 5595 50  0001 C CNN
-	1    10815 5595
+P 10700 5600
+F 0 "H4" H 10800 5646 50  0000 L CNN
+F 1 "MountingHole" H 10800 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10700 5600 50  0001 C CNN
+F 3 "~" H 10700 5600 50  0001 C CNN
+	1    10700 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 605E5377
-P 10630 5595
-F 0 "H2" H 10730 5641 50  0000 L CNN
-F 1 "MountingHole" H 10730 5550 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 10630 5595 50  0001 C CNN
-F 3 "~" H 10630 5595 50  0001 C CNN
-	1    10630 5595
+P 10500 5600
+F 0 "H2" H 10600 5646 50  0000 L CNN
+F 1 "MountingHole" H 10600 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10500 5600 50  0001 C CNN
+F 3 "~" H 10500 5600 50  0001 C CNN
+	1    10500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L airbox-rescue:ils-dcdc-ils-dcdc U5
+U 1 1 60736230
+P 1505 1390
+F 0 "U5" H 1505 1757 50  0000 C CNN
+F 1 "ils-dcdc-ils-dcdc" H 1505 1666 50  0000 C CNN
+F 2 "ils-dcdc:ils-3v3dcdc" H 1505 1390 50  0001 C CNN
+F 3 "" H 1505 1390 50  0001 C CNN
+	1    1505 1390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60746561
+P 10500 5800
+F 0 "H5" H 10600 5846 50  0000 L CNN
+F 1 "MountingHole" H 10600 5755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10500 5800 50  0001 C CNN
+F 3 "~" H 10500 5800 50  0001 C CNN
+	1    10500 5800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
