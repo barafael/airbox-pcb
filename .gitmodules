@@ -3,10 +3,10 @@
 	url = https://github.com/barafael/sensirion-scd30-kicad
 [submodule "waveshare-epaper-module"]
 	path = waveshare-epaper-module
-	url = git@github.com:barafael/waveshare-epaper-module.git
+	url = https://github.com/barafael/waveshare-epaper-module
 [submodule "waveshare-nrf52840-module"]
 	path = waveshare-nrf52840-module
-	url = git@github.com:barafael/waveshare-nrf52840-module.git
+	url = https://github.com/barafael/waveshare-nrf52840-module
 [submodule "sgp40-adafruit-kicad"]
 	path = sgp40-adafruit-kicad
-	url = git@github.com:barafael/sgp40-adafruit-kicad.git
+	url = https://github.com/barafael/sgp40-adafruit-kicad
