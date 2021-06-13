@@ -116,22 +116,6 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# airbox-rescue_ils-dcdc-ils-dcdc
-#
-DEF airbox-rescue_ils-dcdc-ils-dcdc U 0 40 Y Y 1 F N
-F0 "U" -250 250 50 H V C CNN
-F1 "airbox-rescue_ils-dcdc-ils-dcdc" 0 25 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -300 200 300 -150 0 1 10 f
-X VIN+ 1 -400 100 100 R 50 50 1 1 W
-X VIN- 2 -400 -50 100 R 50 50 1 1 W
-X VOUT+ 3 400 100 100 L 50 50 1 1 w
-X VOUT- 4 400 -50 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
 # epaper-module_epaper-module
 #
 DEF epaper-module_epaper-module U 0 40 Y Y 1 F N
@@ -149,6 +133,22 @@ X CLK 5 500 0 100 L 50 50 1 1 I
 X DIN 6 500 -100 100 L 50 50 1 1 I
 X GND 7 500 -200 100 L 50 50 1 1 I
 X VCC 8 500 -300 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ils-dcdc_ils-dcdc
+#
+DEF ils-dcdc_ils-dcdc U 0 40 Y Y 1 F N
+F0 "U" -250 250 50 H V C CNN
+F1 "ils-dcdc_ils-dcdc" 0 25 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 200 300 -150 0 1 10 f
+X VIN+ 1 -400 100 100 R 50 50 1 1 W
+X VIN- 2 -400 -50 100 R 50 50 1 1 W
+X VOUT+ 3 400 100 100 L 50 50 1 1 w
+X VOUT- 4 400 -50 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
@@ -268,11 +268,11 @@ X SEL 7 -650 50 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# sgp40-adafruit-breakout_SGP40
+# sgp40_SGP40
 #
-DEF sgp40-adafruit-breakout_SGP40 U 0 40 Y Y 1 F N
+DEF sgp40_SGP40 U 0 40 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "sgp40-adafruit-breakout_SGP40" 0 0 50 H V C CNN
+F1 "sgp40_SGP40" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
